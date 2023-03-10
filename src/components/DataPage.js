@@ -50,22 +50,22 @@ const DataPage = () => {
                     </div>
                   </td>
                   <td className="bluecolor w-63">
-                    <strong>-</strong>
+                    <strong>{ele.back1}</strong>
                   </td>
                   <td className="w-63 redcolor text-center">
-                    <strong>-</strong>
+                    <strong>{ele.lay1}</strong>
                   </td>
                   <td className="w-63 bluecolor">
-                    <strong>-</strong>
+                    <strong>{ele.back11}</strong>
                   </td>
                   <td className="w-63 redcolor text-center">
-                    <strong>-</strong>
+                    <strong>{ele.lay11}</strong>
                   </td>
                   <td className="w-63 bluecolor">
-                    <strong>-</strong>
+                    <strong>{ele.back12}</strong>
                   </td>
                   <td className="w-63 redcolor text-center">
-                    <strong>-</strong>
+                    <strong>{ele.lay12}</strong>
                   </td>
                 </tr>
               );
