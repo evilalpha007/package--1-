@@ -21,42 +21,42 @@ const Sidebar = ({ sidebar, closeSidebar }) => {
               <p> Balance Information</p>
             </div>
             <div className="account_info">
-            <div className="row">
-            <div className="col">
-              <p>Available Credit </p>
-            </div>
-            <div className="col">
-              <p>453652 </p>
-            </div>
-            </div>
-         
-          <div className="row">
-          <div className="col">
-          <p> Credit Limit </p>
-          </div>
-          <div className="col">
-          <p>200000 </p>
-          </div>
-          </div>
-          <div className="row">
-          <div className="col">
-          <p>winnigs </p>
-          </div>
-          <div className="col">
-          <p className="text-success">+45,3652 </p>
-          </div>
-          </div>
-          <div className="row">
-          <div className="col">
-          <p>Net Exposer </p>
-          </div>
-          <div className="col">
-          <p>0.00 </p>
-          </div>
-          </div>
-          </div>
-            </div>
+              <div className="row">
+                <div className="col">
+                  <p>Available Credit </p>
+                </div>
+                <div className="col">
+                  data
+                  <p>453652 </p>
+                </div>
+              </div>
 
+              <div className="row">
+                <div className="col">
+                  <p> Credit Limit </p>
+                </div>
+                <div className="col">
+                  <p>200000 </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <p>winnigs </p>
+                </div>
+                <div className="col">
+                  <p className="text-success">+45,3652 </p>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <p>Net Exposer </p>
+                </div>
+                <div className="col">
+                  <p>0.00 </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div>
             <button

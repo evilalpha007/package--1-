@@ -142,8 +142,7 @@ hr {
   line-height: 1.25;
   margin: 0;
   min-height: 3rem;
-  padding: 10px;
-  /* padding: calc(0.875rem - 1px) calc(1.5rem - 1px); */
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
   transition: all 250ms;
@@ -688,6 +687,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 1rem;
 }
 .sidebar {
+  display: block;
   position: absolute;
   background-color: #fff;
   /* color: white; */
@@ -695,7 +695,7 @@ input[type="number"]::-webkit-inner-spin-button {
   right: -15px;
   height: 100vh;
   width: 250px;
-  transform: translateX(120%);
+  transform: translateX(0%);
   transition: all 0.4s;
 }
 .sidebar li {
@@ -706,13 +706,14 @@ input[type="number"]::-webkit-inner-spin-button {
 .sidebar li:hover {
 }
 .sidebar--open {
-  transform: translateX(0%);
+display: none;
+  transform: translateX(100%);
 }
 .new_sdiebar{
   color: #040b0c;
 }
 .navbar {
-  display: none !important;
+  display: none;
 }
 
 /* *****Account side bar   end **** */
@@ -788,10 +789,10 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .navbar {
     z-index: 20;
-    display: block;
-    position: fixed;
+    display: block !important;
+    position: absolute !important;
     right: 0px;
-    top: 30px;
+    top: 12px;
     font-size: 30px;
   }
 }

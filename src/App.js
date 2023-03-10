@@ -12,6 +12,7 @@ import SubAdmin from "./components/SubAdmin";
 import ProtectedRoute from "./authentication/ProtectedRoute";
 import { useDispatch, useSelector } from "react-redux";
 import AdminRoutes from "./authentication/AdminRoutes";
+import MobdileView from "./components/mobile/header/MobdileView";
 
 function App() {
   const { login } = useSelector((state) => state.auth);
@@ -24,15 +25,7 @@ console.log(data);
     <>
       <AdminRoutes />
       <Routes>
-        <Route exact path="/" element={login ? <List /> : <Login />} />
-        <Route element={<ProtectedRoute login={false} />}>
-          <Route exact path="ss" element={<Ss />} />
-          <Route exact path="Master" element={<Master />} />
-          <Route exact path="supermaster" element={<SuperMaster />} />
-          <Route exact path="subadmin" element={<SubAdmin />} />
-          <Route exact path="agent" element={<Agent />} />
-          <Route exact path="*" element={<Error />} />
-        </Route>
+        <Route exact path="/" element={<MobdileView />} />
       </Routes>
     </>
   );
@@ -40,4 +33,13 @@ console.log(data);
 
 export default App;
 
-// <Route exact path="/" element={<MobdileView />} />
+
+// <Route exact path="/" element={login ? <List /> : <Login />} />
+// <Route element={<ProtectedRoute login={false} />}>
+//   <Route exact path="ss" element={<Ss />} />
+//   <Route exact path="Master" element={<Master />} />
+//   <Route exact path="supermaster" element={<SuperMaster />} />
+//   <Route exact path="subadmin" element={<SubAdmin />} />
+//   <Route exact path="agent" element={<Agent />} />
+//   <Route exact path="*" element={<Error />} />
+// </Route>

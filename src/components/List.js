@@ -64,7 +64,7 @@ const List = () => {
           <div className="col col-lg-2">
             <SideList />
           </div>
-          <div className="col-lg-6  ">
+          <div className="col-lg-7 col ">
             <DetailPage />
           </div>
           <div className="col col-lg-3">

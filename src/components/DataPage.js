@@ -22,10 +22,10 @@ const DataPage = () => {
             {data.map((ele, i) => {
               return (
                 <tr key={i}>
-                  <td className='d-flex fsm remove_border hover_effect justify-content-between '>
+                  <td className="d-flex fsm remove_border hover_effect justify-content-between ">
                     <NavLink
-                      to=''
-                      className='flex-1'
+                      to=""
+                      className="flex-1"
                       onClick={() => {
                         dispatch(onChangeAsideActive("EventAllMatch"));
                         dispatch(
@@ -34,11 +34,12 @@ const DataPage = () => {
                             data: ele,
                           })
                         );
-                      }}>
-                      <strong className='mx-2 fsm'>⭐</strong>
+                      }}
+                    >
+                      <strong className="mx-2 fsm">⭐</strong>
                       {ele?.eventName.split("/")[0]}
                     </NavLink>
-                    <div className=''>
+                    <div className="">
                       {ele.inPlay ? (
                         <small>{ele?.eventName.split("/")[1]}</small>
                       ) : (
@@ -46,23 +47,23 @@ const DataPage = () => {
                       )}
                     </div>
                   </td>
-                  <td className='bluecolor w-63'>
-                    <strong>-</strong>
+                  <td className="bluecolor w-63">
+                    <strong>{ele.back1}</strong>
                   </td>
-                  <td className='w-63 redcolor text-center'>
-                    <strong>-</strong>
+                  <td className="w-63 redcolor text-center">
+                    <strong>{ele.lay1}</strong>
                   </td>
-                  <td className='w-63 bluecolor'>
-                    <strong>-</strong>
+                  <td className="w-63 bluecolor">
+                    <strong>{ele.back11}</strong>
                   </td>
-                  <td className='w-63 redcolor text-center'>
-                    <strong>-</strong>
+                  <td className="w-63 redcolor text-center">
+                    <strong>{ele.lay11}</strong>
                   </td>
-                  <td className='w-63 bluecolor'>
-                    <strong>-</strong>
+                  <td className="w-63 bluecolor">
+                    <strong>{ele.back12}</strong>
                   </td>
-                  <td className='w-63 redcolor text-center'>
-                    <strong>-</strong>
+                  <td className="w-63 redcolor text-center">
+                    <strong>{ele.lay12}</strong>
                   </td>
                 </tr>
               );

@@ -49,7 +49,7 @@ const AdminSidebar = () => {
           </div>
         </div>
       </nav>
-      <div className={`sidebar ${isOpen == true ? "active" : ""}`}>
+      <div className={`sidebar_bar ${isOpen == true ? "active" : ""}`}>
         <div className="sd-header">
           <h4 className="mb-0">Sidebar Header</h4>
           <div className="btn btn-primary" onClick={ToggleSidebar}>
