@@ -10,7 +10,7 @@ const Login = () => {
       <div className=" first-sec ">
         <form action="" className="form-container">
           <figure>
-            <img src="./legalplay.png" alt="" />
+            <img src="./lotus.png" alt="" />
             <figcaption className="text-white text-center mt-2">
               Login
             </figcaption>
