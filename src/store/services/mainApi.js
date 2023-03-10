@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const mainApi = createApi({
   reducerPath: "mainApi",
-  
+
   baseQuery: fetchBaseQuery({
     baseUrl: "http://167.71.224.189/vandu1792",
   }),
@@ -18,10 +18,23 @@ export const mainApi = createApi({
         url: "/soccer",
       }),
     }),
+    GetTennisMatches: builder.query({
+      query: () => ({
+        url: "/tennis",
+      }),
+    }),
+    GetGameIdMarket: builder.query({
+      query: (gameId) => `/market/${gameId}`,
+    }),
   }),
 });
 
-export const { useGetCricketMatchesQuery, useGetSoccerMatchesQuery } = mainApi;
+export const {
+  useGetCricketMatchesQuery,
+  useGetSoccerMatchesQuery,
+  useGetTennisMatchesQuery,
+  useGetGameIdMarketQuery,
+} = mainApi;
 // idar use pass kardo or fir call kara lo jaha karwana hai
 // http://marketsarket.in:3000/getsoccermatches
 //  http://marketsarket.in:3000/gettennismatches
