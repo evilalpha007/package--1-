@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { onChangeAsideActive } from "../store/features/asideSlice";
 import { useGetSoccerMatchesQuery } from "../store/services/mainApi";
+import FootballTable from "./FootballTable";
+import { onChangeDataActive } from "../store/features/dataSlice";
 
 const Soccer = () => {
   const aside = useSelector((state) => state.asideState.aside);
@@ -11,9 +13,10 @@ const Soccer = () => {
   console.log(data);
   if (error) return <>Error</>;
   if (isFetching) return <> Loading... </>;
-  console.log(data);
+
   return (
     <div>
+      <FootballTable />
       <div className="main_div button-8 mt-3">
         <table className="table">
           <tbody>
@@ -24,18 +27,24 @@ const Soccer = () => {
                     <NavLink
                       to=""
                       className="flex-1"
-                      onClick={() =>
-                        dispatch(onChangeAsideActive("EventAllMatch"))
-                      }
+                      onClick={() => {
+                        dispatch(onChangeAsideActive("EventAllMatch"));
+                        dispatch(
+                          onChangeDataActive({
+                            name: "EventAllMatch",
+                            data: ele,
+                          })
+                        );
+                      }}
                     >
                       <strong className="mx-2 fsm">⭐</strong>
-                      {ele?.cname.split("/")[0]}
+                      {ele?.ename.split("/")[0]}
                     </NavLink>
                     <div className="">
                       <small>
-                        {ele.iplay ? ele.stime  : ""}
+                        {ele.iplay ? ele.stime : ""}
 
-                        {ele?.cname.split("/")[1]}
+                        {ele?.stime.split("2023")[1]}
                       </small>
                     </div>
                   </td>

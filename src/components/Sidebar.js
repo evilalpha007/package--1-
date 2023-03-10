@@ -161,7 +161,7 @@ export default Sidebar;
 //     className="sidelist button-6"
 //     onClick={() => dispatch(onChangeAsideActive("Tennis"))}
 //   >
-//     <img src="./teniss_bal.png" className="img_width" alt="" />
+//     <img src="./Tennis_bal.png" className="img_width" alt="" />
 //     Tennis
 //   </button>
 // </div>

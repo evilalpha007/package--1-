@@ -1,23 +1,23 @@
-import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 import { onChangeAsideActive } from "../store/features/asideSlice";
-import { useGetCricketMatchesQuery } from "../store/services/mainApi";
+import { useGetTennisMatchesQuery } from "../store/services/mainApi";
+import FootballTable from "./FootballTable";
 import { onChangeDataActive } from "../store/features/dataSlice";
+import TennisTable from "./TennisTable";
 
-const DataPage = () => {
-  const navigate = useNavigate();
+const Tennis = () => {
   const aside = useSelector((state) => state.asideState.aside);
   const dispatch = useDispatch();
-
-  const { data, error, isFetching } = useGetCricketMatchesQuery();
+  const { data, error, isFetching } = useGetTennisMatchesQuery();
   console.log(data);
   if (error) return <>Error</>;
   if (isFetching) return <> Loading... </>;
-  console.log(data);
 
   return (
     <div>
+      <TennisTable />
       <div className="main_div button-8 mt-3">
         <table className="table">
           <tbody>
@@ -39,33 +39,33 @@ const DataPage = () => {
                       }}
                     >
                       <strong className="mx-2 fsm">⭐</strong>
-                      {ele?.eventName.split("/")[0]}
+                      {ele?.ename.split("/")[0]}
                     </NavLink>
                     <div className="">
-                      {ele.inPlay ? (
-                        <small>{ele?.eventName.split("/")[1]}</small>
-                      ) : (
-                        <small>InPlay</small>
-                      )}
+                      <small>
+                        {ele.iplay ? ele.stime : ""}
+
+                        {ele?.stime.split("2023")[1]}
+                      </small>
                     </div>
                   </td>
                   <td className="bluecolor w-63">
-                    <strong>{ele.back1}</strong>
+                    <strong>-</strong>
                   </td>
                   <td className="w-63 redcolor text-center">
-                    <strong>{ele.lay1}</strong>
+                    <strong>-</strong>
                   </td>
                   <td className="w-63 bluecolor">
-                    <strong>{ele.back11}</strong>
+                    <strong>-</strong>
                   </td>
                   <td className="w-63 redcolor text-center">
-                    <strong>{ele.lay11}</strong>
+                    <strong>-</strong>
                   </td>
                   <td className="w-63 bluecolor">
-                    <strong>{ele.back12}</strong>
+                    <strong>-</strong>
                   </td>
                   <td className="w-63 redcolor text-center">
-                    <strong>{ele.lay12}</strong>
+                    <strong>-</strong>
                   </td>
                 </tr>
               );
@@ -77,4 +77,4 @@ const DataPage = () => {
   );
 };
 
-export default DataPage;
+export default Tennis;

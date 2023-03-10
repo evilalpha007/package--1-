@@ -12,7 +12,7 @@ const MatchTable = () => {
 
   const { data, error, isFetching } = useGetCricketMatchesQuery();
   if (error) return <>Error</>;
-  console.log(data.eventName);
+  console.log(data);
   if (isFetching) return <> Loading... </>;
   return (
     <div className="MatchTable mt-3">
@@ -21,7 +21,7 @@ const MatchTable = () => {
           <div className="row align-items-center mb-2 mx-1" key={i}>
             <div className="col">
               <div className="event_details">
-            <SportsBaseballIcon sx={{ fontSize: 20 }} />
+                <SportsBaseballIcon sx={{ fontSize: 20 }} />
                 <span
                   onClick={() => {
                     dispatch(onChangeAsideActive("MobEventMatch"));

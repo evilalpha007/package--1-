@@ -56,16 +56,14 @@ const SideList = () => {
             className="sidelist button-6 justify-content-start"
             onClick={() => dispatch(onChangeAsideActive("Tennis"))}
           >
-            <img src="./image/teniss_bal.png" className="img_width" alt="" />
+            <img src="./image/Tennis_bal.png" className="img_width" alt="" />
             Tennis
           </button>
         </div>
         <div>
           <button
             className="sidelist button-6 justify-content-start"
-            onClick={() => dispatch(onChangeAsideActive("LiveCasino"))
-             
-            }
+            onClick={() => dispatch(onChangeAsideActive("LiveCasino"))}
           >
             <img src="./image/casino/caino.png" className="img_width" alt="" />
             Live Casino

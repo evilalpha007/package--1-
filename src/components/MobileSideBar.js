@@ -78,7 +78,7 @@ export default function PersistentDrawerLeft() {
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
         <Toolbar>
@@ -87,11 +87,11 @@ export default function PersistentDrawerLeft() {
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
-            sx={{ mr: 2, ...(open && { display: 'none' }) }}
+            sx={{ mr: 2, ...(open && { display: "none" }) }}
           >
             <MenuIcon />
           </IconButton>
-         {/* <Typography variant="h6" noWrap component="div">
+          {/* <Typography variant="h6" noWrap component="div">
             Persistent drawer
   </Typography>*/}
         </Toolbar>
@@ -100,9 +100,9 @@ export default function PersistentDrawerLeft() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          '& .MuiDrawer-paper': {
+          "& .MuiDrawer-paper": {
             width: drawerWidth,
-            boxSizing: 'border-box',
+            boxSizing: "border-box",
           },
         }}
         variant="persistent"
@@ -111,73 +111,84 @@ export default function PersistentDrawerLeft() {
       >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            {theme.direction === "ltr" ? (
+              <ChevronLeftIcon />
+            ) : (
+              <ChevronRightIcon />
+            )}
           </IconButton>
         </DrawerHeader>
         <Divider />
         <List>
-      { /* *  copy part left*/ }
-      <div className=''>
-      <button
-        className='sidelist button-6'
-        onClick={() => dispatch(onChangeAsideActive("Favorites"))}>
-        <i className='fa-regular fa-star'></i>
-        Favorites
-      </button>
-      <div>
-        <button
-          className='sidelist button-6'
-          onClick={() => dispatch(onChangeAsideActive("Cricket"))}>
-          <img src='./cricket_ball.png' className='img_width' alt='' />
-          Cricket
-        </button>
-      </div>
-      <div>
-        <button
-          className='sidelist button-6'
-          onClick={() => dispatch(onChangeAsideActive("Greyhound Racing"))}>
-          <img src='./greyhound.jpg' className='img_width' alt='' />
-          Greyhound Racing
-        </button>
-      </div>
-      <div>
-        <button
-          className='sidelist button-6'
-          onClick={() => dispatch(onChangeAsideActive("Horse Racing"))}>
-          <img src='./horse_racing.jpg' className='img_width' alt='' />
-          Horse Racing
-        </button>
-      </div>
-      <div>
-        <button
-          className='sidelist button-6'
-          onClick={() => dispatch(onChangeAsideActive("Soccer"))}>
-          <img src='./soccer.webp' className='img_width' alt='' />
-          Soccer
-        </button>
-      </div>
-      <div>
-        <button
-          className='sidelist button-6'
-          onClick={() => dispatch(onChangeAsideActive("Tennis"))}>
-          <img src='./teniss_bal.png' className='img_width' alt='' />
-          Tennis
-        </button>
-      </div>
-      <div>
-        <button
-          className='sidelist button-6'
-          onClick={() => dispatch(onChangeAsideActive("LiveCasino"))}>
-          <img src='./caino.png' className='img_width' alt='' />
-          Live Casino
-        </button>
-      </div>
-    </div>
+          {/* *  copy part left*/}
+          <div className="">
+            <button
+              className="sidelist button-6"
+              onClick={() => dispatch(onChangeAsideActive("Favorites"))}
+            >
+              <i className="fa-regular fa-star"></i>
+              Favorites
+            </button>
+            <div>
+              <button
+                className="sidelist button-6"
+                onClick={() => dispatch(onChangeAsideActive("Cricket"))}
+              >
+                <img src="./cricket_ball.png" className="img_width" alt="" />
+                Cricket
+              </button>
+            </div>
+            <div>
+              <button
+                className="sidelist button-6"
+                onClick={() =>
+                  dispatch(onChangeAsideActive("Greyhound Racing"))
+                }
+              >
+                <img src="./greyhound.jpg" className="img_width" alt="" />
+                Greyhound Racing
+              </button>
+            </div>
+            <div>
+              <button
+                className="sidelist button-6"
+                onClick={() => dispatch(onChangeAsideActive("Horse Racing"))}
+              >
+                <img src="./horse_racing.jpg" className="img_width" alt="" />
+                Horse Racing
+              </button>
+            </div>
+            <div>
+              <button
+                className="sidelist button-6"
+                onClick={() => dispatch(onChangeAsideActive("Soccer"))}
+              >
+                <img src="./soccer.webp" className="img_width" alt="" />
+                Soccer
+              </button>
+            </div>
+            <div>
+              <button
+                className="sidelist button-6"
+                onClick={() => dispatch(onChangeAsideActive("Tennis"))}
+              >
+                <img src="./Tennis_bal.png" className="img_width" alt="" />
+                Tennis
+              </button>
+            </div>
+            <div>
+              <button
+                className="sidelist button-6"
+                onClick={() => dispatch(onChangeAsideActive("LiveCasino"))}
+              >
+                <img src="./caino.png" className="img_width" alt="" />
+                Live Casino
+              </button>
+            </div>
+          </div>
         </List>
         <Divider />
-      
       </Drawer>
-     
     </Box>
   );
 }
