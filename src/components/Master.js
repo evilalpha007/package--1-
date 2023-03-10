@@ -8,7 +8,7 @@ const Master = () => {
 
         <form action="" className="form-container">
           <figure>
-            <img src="./lotus.png" alt="" />
+            <img src="./legalplay.png" alt="" />
             <figcaption className="text-white text-center mt-2">
               Master Account
             </figcaption>

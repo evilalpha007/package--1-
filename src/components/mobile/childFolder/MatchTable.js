@@ -21,21 +21,23 @@ const MatchTable = () => {
           <div className="row align-items-center mb-2 mx-1" key={i}>
             <div className="col">
               <div className="event_details">
-                <SportsBaseballIcon sx={{ fontSize: 20 }} />
-                <span
-                  onClick={() => {
-                    dispatch(onChangeAsideActive("MobEventMatch"));
-                    dispatch(
-                      onChangeDataActive({
-                        name: "MobEventMatch",
-                        data: ele,
-                      })
-                    );
-                  }}
-                  className="text-left"
-                >
-                  {ele?.eventName.split("/")[0]}
-                </span>
+              <div>
+              <SportsBaseballIcon sx={{ fontSize: 20 }} />
+              <span
+                onClick={() => {
+                  dispatch(onChangeAsideActive("MobEventMatch"));
+                  dispatch(
+                    onChangeDataActive({
+                      name: "MobEventMatch",
+                      data: ele,
+                    })
+                  );
+                }}
+                className="text-left"
+              >
+                {ele?.eventName.split("/")[0]}
+              </span>
+              </div>
 
                 <div className="event_iconsyt">
                   <div className="video-play-icon">⏯️</div>
@@ -47,15 +49,13 @@ const MatchTable = () => {
               <div className="bet-button d-flex justify-content-between">
                 <button className="bet_button">
                   <div className="price">{ele.back1}</div>
-                  <div className="market_volume">{ele.back11}</div>
+              
                 </button>
                 <button className="bet_button">
                   <div className="price">1.88</div>
-                  <div className="market_volume">1650</div>
                 </button>
                 <button className="bet_button">
                   <div className="price">{ele.lay1}</div>
-                  <div className="market_volume">{ele.lay11}</div>
                 </button>
               </div>
             </div>
@@ -67,3 +67,7 @@ const MatchTable = () => {
 };
 
 export default MatchTable;
+
+    //  <div className="market_volume">1650</div>
+                  // <div className="market_volume">{ele.lay11}</div>
+//    <div className="market_volume">{ele.back11}</div>

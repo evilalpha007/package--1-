@@ -49,7 +49,11 @@ font-family: 'Roboto Serif', serif;
   align-items: center;
 
   overflow: hidden;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.event_details >span{
+  font-size: 13px;
 }
 .bet_button {
   border: none;

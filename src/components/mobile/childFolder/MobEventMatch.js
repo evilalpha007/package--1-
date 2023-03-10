@@ -9,7 +9,9 @@ console.log(allData.data);
     <div className="MobEventMatch">
       <div className="main-details-header">
         <h3> {allData.data?.eventName.split("/")[0]} </h3>
-        <span>Today {allData.data?.eventName.split("/")[1].split("(IST)")} </span>
+        <span>
+          Today {allData.data?.eventName.split("/")[1].split("(IST)")}{" "}
+        </span>
       </div>
       <div className="head-navbar d-flex">
         <button className="head-navbar-btn">Market</button>
@@ -32,7 +34,7 @@ console.log(allData.data);
           </div>
         </div>
         <div className="col-3 d-flex justify-content-evenly">
-          <div className="market_actions">back</div>
+          <div className="market_actions mx-3">back</div>
           <div className="market_actions">lay</div>
         </div>
       </div>
@@ -62,7 +64,7 @@ console.log(allData.data);
           <div className="marketodds d-flex ">
             <button className="button_odds bet_button mx-2">
               <span>{allData.data.back1}</span>
-              <span>{allData.data.back11}</span>
+              <span>{allData.data.back12}</span>
             </button>
             <button className="button_odds darkpink bet_button">
               <span>{allData.data.lay1}</span>
@@ -109,11 +111,11 @@ console.log(allData.data);
           <div className="marketodds d-flex ">
             <button className="button_odds bet_button mx-2">
               <span>{allData.data.back1}</span>
-              <span>{allData.data.back11}</span>
+              <span>{allData.data.back12}</span>
             </button>
             <button className="button_odds darkpink bet_button">
               <span>{allData.data.lay1}</span>
-              <span>{allData.data.lay11}</span>
+              <span>{allData.data.lay12}</span>
             </button>
           </div>
         </div>

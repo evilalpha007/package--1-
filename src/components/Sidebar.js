@@ -17,7 +17,7 @@ const Sidebar = ({ sidebar, closeSidebar }) => {
           <div className="details_part mt-3 ">
             <h3>demoId</h3>
             <div className="d-flex justify-cotent-evenly mt-3 mx-3">
-              <i className="fa-solid fa-building-columns"></i>
+              <i className="fa-solid fa-building-columns mx-2"></i>
               <p> Balance Information</p>
             </div>
             <div className="account_info">
@@ -64,42 +64,42 @@ const Sidebar = ({ sidebar, closeSidebar }) => {
               onClick={() => dispatch(onChangeAsideActive("My Bets"))}
             >
               <img src="./cricket_ball.png" className="img_width" alt="" />
-              My Bets
+              Open Bets
             </button>
             <button
               className="sidelist button-6"
               onClick={() => dispatch(onChangeAsideActive("My Bets"))}
             >
               <img src="./cricket_ball.png" className="img_width" alt="" />
-              My Bets
+              Betting P&L
             </button>
             <button
               className="sidelist button-6"
               onClick={() => dispatch(onChangeAsideActive("My Bets"))}
             >
               <img src="./cricket_ball.png" className="img_width" alt="" />
-              My Bets
+              Transfer Statement
             </button>
             <button
               className="sidelist button-6"
               onClick={() => dispatch(onChangeAsideActive("My Bets"))}
             >
               <img src="./cricket_ball.png" className="img_width" alt="" />
-              My Bets
+              Time Setting
             </button>
             <button
               className="sidelist button-6"
               onClick={() => dispatch(onChangeAsideActive("My Bets"))}
             >
               <img src="./cricket_ball.png" className="img_width" alt="" />
-              My Bets
+              Change password
             </button>
             <button
               className="sidelist button-6"
               onClick={() => dispatch(onChangeAsideActive("My Bets"))}
             >
               <img src="./cricket_ball.png" className="img_width" alt="" />
-              My Bets
+              Setting
             </button>
           </div>
         </List>

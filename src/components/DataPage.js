@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { onChangeAsideActive } from "../store/features/asideSlice";
 import { useGetCricketMatchesQuery } from "../store/services/mainApi";
@@ -11,10 +11,9 @@ const DataPage = () => {
   const dispatch = useDispatch();
 
   const { data, error, isFetching } = useGetCricketMatchesQuery();
-  console.log(data);
+  // console.log(data);
   if (error) return <>Error</>;
   if (isFetching) return <> Loading... </>;
-  console.log(data);
 
   return (
     <div>
