@@ -1,0 +1,157 @@
+.header_admin {
+  background-color: #3b0841;
+}
+.admin_layouts {
+  background-color: #3b0841;
+  height: 100vh;
+}
+.admin_sidebar {
+  width: 15%;
+  /* background-color: rgb(0 0 0 / 33%) !important; */
+
+  color: #fff;
+}
+.main_components {
+  background-color: #3b0841;
+  color: #fff;
+
+  width: 100%;
+}
+.green {
+  color: #47e53c;
+}
+.balance_bar {
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgb(0 0 0 / 33%);
+}
+/* .table > :not(caption) > * > * {
+  background-color: rgb(0 0 0 / 33%) !important;
+} */
+.table_odd_color {
+  background-color: #3b0841 !important;
+}
+
+.balance_iner {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hidebar {
+  display: none;
+}
+
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+/* ---Sidebar css */
+.text-primary {
+  color: #5a8dee !important;
+}
+.btn-primary {
+  border-color: #5a8dee !important;
+  background-color: #5a8dee !important;
+  color: #fff;
+}
+.shadow-md {
+  /* box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3); */
+}
+.navbar {
+  border-radius: 5px;
+}
+.sidebar {
+  /* width: 270px; */
+  width: 15%;
+  min-height: 100vh;
+  /* box-shadow: 0px 4px 8px rgb(0 0 0 / 16%); */
+  background-color: #540c5c;
+
+  position: fixed;
+  top: 20%;
+  left: -100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+.sidebar.active {
+  left: -20%;
+  overflow: scroll;
+}
+.sd-header {
+  display: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sd-body {
+  padding: 15px;
+  /* max-height: calc(100vh - 67px); */
+  overflow-x: hidden;
+}
+.sd-body ul {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+}
+.sd-body ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.sd-body ul li .sd-link {
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 0px;
+  color: #ffff;
+  font-size: 15px;
+  /* background-color: #e5e8ec; */
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.balance_button {
+  max-width: 200px;
+  background: rgba(245, 245, 245, 0.1);
+}
+.balancec_details {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.dropdown_button {
+  border-radius: 0px;
+  text-align: left;
+  width: 200px;
+}
+.market_type_button {
+  border-radius: 0px;
+  margin-left: 20px;
+  text-align: left;
+  width: 250px;
+}
+
+.market_button {
+  margin-left: 20px;
+  border-radius: 0px;
+}
+.bet_ticker_section {
+  padding: 20px;
+  background-color: rgb(0 0 0 / 33%);
+}

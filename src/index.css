@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,500&display=swap');
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Serif', serif;
+}
+.navbar {
+  background: #1a343a;
+  font-size: 12px !important;
+  margin-right: 12px;
+}
+
+.bg-1 {
+  width: 100%;
+  height: auto;
+}
+
+.InPlay_page {
+  background: #257b23;
+  color: rgb(255, 255, 255);
+  margin-left: -11px;
+  margin-right: -11px;
+  position: relative;
+  width: 50%;
+  padding: 5px;
+}
+.InPlay_page::before {
+  content: "";
+}
+.InPlay_page::after {
+  clip-path: polygon(0px -1px, 100% -1px, 1px 100%, 0px 100%);
+  content: "";
+  width: 18px;
+  position: absolute;
+  height: 100%;
+  right: -17px;
+  top: 0px;
+}
+
+/* ****  match table css start **** */
+.MatchTable {
+  max-height: 260px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.event_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+  font-size: 14px;
+}
+.bet_button {
+  border: none;
+  background: #a7d8fd;
+  font-size: 12px;
+  width: 50px;
+  /* max-height: 169px; */
+  /* background: red; */
+  height: 50px;
+}
+
+/* ****  match table css end **** */
+/* ****  Most POPULAR css start **** */
+.Most_popular {
+  background: #e09436;
+  color: rgb(255, 255, 255);
+  margin-left: -11px;
+  margin-right: -11px;
+  position: relative;
+  width: 50%;
+  padding: 5px;
+}
+.Most_popular::before {
+  content: "";
+}
+.Most_popular::after {
+  clip-path: polygon(0px -1px, 100% -1px, 1px 100%, 0px 100%);
+  content: "";
+  width: 18px;
+  position: absolute;
+  height: 100%;
+  right: -17px;
+  top: 0px;
+}
+/* ****  Most POPULAR css end **** */
+.main-details-header {
+  color: #fff;
+  background-color: #163439;
+  font-size: 13px;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.head-navbar-btn {
+  background-color: #0f2327;
+  color: #5bafc0;
+  padding: 10px;
+  font-size: 10px;
+  width: 100%;
+  min-width: 80px;
+  border: none;
+  border-right: 1px solid #0f2327;
+}
+.nav-tab {
+  color: #fff;
+  margin-right: 0px !important;
+  background: #1e464e;
+  text-align: center;
+}
+.heading {
+  padding: 5px 20px;
+  color: #fff;
+  background: #1e464e;
+  max-width: 150px;
+}
+.title{
+  
+}
+.button_odds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.border_bottom{
+  margin-right:0px !important;
+  border-bottom: 1px solid #d8d5d5;
+}
