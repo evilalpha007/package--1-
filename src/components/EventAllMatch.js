@@ -12,16 +12,13 @@ const EventAllMatch = () => {
   const { data, error, isFetching } = useGetGameIdMarketQuery(
     allData.data.gameId
   );
-  console.log(data);
+  if (error) return <>Error</>;
+  if (isFetching) return <> Loading... </>;
 
   // const flattenedArray = data.flatMap((arr1) =>
   //   arr1.t1.flatMap((arr2) => arr2)
   // );
-
   // console.log(flattenedArray);
-
-  if (error) return <>Error</>;
-  if (isFetching) return <> Loading... </>;
   // navigation("/matches");
   return (
     <div>
