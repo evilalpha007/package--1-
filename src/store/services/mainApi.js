@@ -24,7 +24,9 @@ export const mainApi = createApi({
       }),
     }),
     GetGameIdMarket: builder.query({
-      query: (gameId) => `/market/${gameId}`,
+      query: (id) => ({
+        url: `/market/${id}`,
+      }),
     }),
   }),
 });
@@ -35,6 +37,7 @@ export const {
   useGetTennisMatchesQuery,
   useGetGameIdMarketQuery,
 } = mainApi;
+
 // idar use pass kardo or fir call kara lo jaha karwana hai
 // http://marketsarket.in:3000/getsoccermatches
 //  http://marketsarket.in:3000/gettennismatches

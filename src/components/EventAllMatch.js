@@ -8,9 +8,18 @@ const EventAllMatch = () => {
   const navigation = useNavigate();
   const dispatch = useDispatch();
   const allData = useSelector((state) => state.dataState.data);
+
   const { data, error, isFetching } = useGetGameIdMarketQuery(
     allData.data.gameId
   );
+  console.log(data);
+
+  // const flattenedArray = data.flatMap((arr1) =>
+  //   arr1.t1.flatMap((arr2) => arr2)
+  // );
+
+  // console.log(flattenedArray);
+
   if (error) return <>Error</>;
   if (isFetching) return <> Loading... </>;
   // navigation("/matches");
@@ -48,6 +57,7 @@ const EventAllMatch = () => {
                 </a>
               </td>
               <td className="bluecolor1 w-63">
+                <strong>{data.t1.b1}</strong>
                 <strong>-</strong>
               </td>
               <td className="w-63 bluecolor1 text-center">

@@ -12,6 +12,7 @@ const Tennis = () => {
   const dispatch = useDispatch();
   const { data, error, isFetching } = useGetTennisMatchesQuery();
   console.log(data);
+
   if (error) return <>Error</>;
   if (isFetching) return <> Loading... </>;
 
