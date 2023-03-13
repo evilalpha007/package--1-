@@ -39,6 +39,14 @@ function App() {
       ) : (
         <PrivateRoutes />
       )}
+      <Routes>
+        <Route exact path="/ss" element={<Ss />} />
+        <Route exact path="/Master" element={<Master />} />
+        <Route exact path="/supermaster" element={<SuperMaster />} />
+        <Route exact path="/subadmin" element={<SubAdmin />} />
+        <Route exact path="/agent" element={<Agent />} />
+        <Route exact path="*" element={<Error />} />
+      </Routes>
     </>
   );
 }
