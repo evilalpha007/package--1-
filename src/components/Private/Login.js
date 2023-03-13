@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { handelLogin } from "../../store/features/authSlice";
 const Login = () => {
   const dispatch = useDispatch();
@@ -23,20 +23,14 @@ const Login = () => {
               className="username mt-2 mb-2"
             />
           </div>
-          <button
-            className="text-center loginbutton my3"
-            onClick={() => {
-              Navigate("/list");
-            }}
-          >
-            Login
-          </button>
-          <button
-            className="text-center loginbutton "
+          <button className="text-center loginbutton my3">Login</button>
+          <Link
+            to={"/game-list/cricket"}
+            className="text-center loginbutton"
             onClick={() => dispatch(handelLogin({ login: true }))}
           >
             Login with demo id
-          </button>
+          </Link>
         </form>
       </div>
     </div>

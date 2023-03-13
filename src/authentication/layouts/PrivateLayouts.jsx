@@ -1,7 +1,7 @@
 import React from "react";
 // import DetailPage from "./DetailPage";
 import { useState } from "react";
-import "../../index.css"
+import "../../index.css";
 import { useDispatch, useSelector } from "react-redux";
 import { onChangeAsideActive } from "../../store/features/asideSlice";
 import AccountSideBar from "../../components/Private/AccountSideBar";
@@ -10,6 +10,7 @@ import Header from "./../../components/Private/Header/Header";
 import SideCart from "./../../components/Private/SideCart";
 import SideList from "./../../components/Private/SideList";
 import Footer from "../../components/Private/Footer";
+import { Link } from "react-router-dom";
 
 export default function PrivateLayouts({ children }) {
   const aside = useSelector((state) => state.asideState.aside);
@@ -39,9 +40,12 @@ export default function PrivateLayouts({ children }) {
           </li>
           <li className="hide_dot">ELECTION</li>
           <li className="hide_dot">TWENTY20BIGBASH🏆</li>
-          <li onClick={() => dispatch(onChangeAsideActive("Cricket"))}>
+          <Link
+            to={"/cricket"}
+            // onClick={() => dispatch(onChangeAsideActive("Cricket"))}
+          >
             CRICKET
-          </li>
+          </Link>
           <li onClick={() => dispatch(onChangeAsideActive("Soccer"))}>
             SOCCER
           </li>
@@ -74,4 +78,3 @@ export default function PrivateLayouts({ children }) {
     </div>
   );
 }
-    
