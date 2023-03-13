@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Route, Routes } from "react-router";
 import AdminHomePage from "../components/admin/AdminHomePage";
-import Admin from "../components/Admin";
+import Admin from "../components/admin/Admin";
 import ProtectedRoute from "./ProtectedRoute";
 import Ss from "../components/Ss";
 import AdminLayouts from "../components/admin/AdminLayouts";
@@ -14,7 +14,7 @@ import AdminNetExposure from "../components/admin/AdminNetExposure";
 import AdminPositionTakingListing from "../components/admin/AdminPositionTakingListing";
 import AdminTransfer from "../components/admin/AdminTransfer";
 import AgencyManagement from "../components/admin/AgencyManagement";
-import Balance from './../components/admin/account/Balance';
+import Balance from "./../components/admin/account/Balance";
 
 export default function AdminRoutes() {
   const { adminLogin } = useSelector((state) => state.auth);

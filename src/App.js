@@ -1,19 +1,19 @@
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
-import List from "./components/List";
+import List from "./components/Private/desktop/List";
 import { Routes, Route, Redirect } from "react-router-dom";
 import Error from "./components/Error";
 import Login from "./components/Login";
 import Master from "./components/Master";
 import Ss from "./components/Ss";
 import SuperMaster from "./components/SuperMaster";
-import Agent from "./components/Agent";
+import Agent from "./components/Private/desktop/Agent";
 import SubAdmin from "./components/SubAdmin";
 import ProtectedRoute from "./authentication/ProtectedRoute";
 import { useDispatch, useSelector } from "react-redux";
 import AdminRoutes from "./authentication/AdminRoutes";
 import MobdileView from "./components/mobile/header/MobdileView";
-import { useState ,useEffect} from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const { login } = useSelector((state) => state.auth);

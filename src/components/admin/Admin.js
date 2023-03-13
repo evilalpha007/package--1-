@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { handelLogin } from "../store/features/authSlice";
+import { handelLogin } from "../../store/features/authSlice";
 
 const Admin = () => {
   const dispatch = useDispatch();
