@@ -4,13 +4,13 @@ import DetailPage from "./DetailPage";
 import Footer from "./Footer";
 import SideCart from "./SideCart";
 import { useState } from "react";
-import Header from "./Header/Header";
-import PersistentDrawerLeft from "./MobileSideBar";
 import PersistentDrawerRight from "./AccountSideBar";
-import AccountSideBar from "./AccountSideBar";
 
 import { useDispatch, useSelector } from "react-redux";
 import { onChangeAsideActive } from "../../store/features/asideSlice";
+import AccountSideBar from "../../components/Private/AccountSideBar";
+import PersistentDrawerLeft from "./../../components/Private/MobileSideBar";
+import Header from "./../../components/Private/Header/Header";
 
 export default function PrivateLayouts({ children }) {
   const aside = useSelector((state) => state.asideState.aside);
