@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { onChangeAsideActive } from "../store/features/asideSlice";
 import { useGetTennisMatchesQuery } from "../store/services/mainApi";
 import FootballTable from "./FootballTable";
-import { onChangeDataActive } from "../store/features/dataSlice";
+// import { onChangeDataActive } from "../store/features/dataSlice";
 import TennisTable from "./TennisTable";
 
 const Tennis = () => {
