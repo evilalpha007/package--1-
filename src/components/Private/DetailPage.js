@@ -7,7 +7,7 @@ import BettingProfits from "./BettingProfits";
 import CricketTable from "./CricketTable";
 import { useDispatch, useSelector } from "react-redux";
 import EventAllMatch from "./EventAllMatch";
-import MobEventMatch from './mobile/childFolder/MobEventMatch';
+import MobEventMatch from "../mobile/childFolder/MobEventMatch";
 import Tennis from "./Teniss";
 
 const DetailPage = ({ activeAside }) => {

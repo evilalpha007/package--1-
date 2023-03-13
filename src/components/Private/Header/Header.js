@@ -3,7 +3,7 @@ import HeaderTime from "../utilities/HeaderTime";
 import { Link } from "react-router-dom";
 import HeaderDate from "../utilities/HeaderDate";
 import { useDispatch } from "react-redux";
-import { onChangeAsideActive } from "../../store/features/asideSlice";
+import { onChangeAsideActive } from "../../../store/features/asideSlice";
 
 const Header = () => {
   // const aside = useSelector((state) => state.asideState.aside);

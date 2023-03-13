@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { handleOddPointToggle } from "../store/features/stateManagementSlice";
-import { useGetGameIdMarketQuery } from "../store/services/mainApi";
+import { handleOddPointToggle } from "../../store/features/stateManagementSlice";
+import { useGetGameIdMarketQuery } from "../../store/services/mainApi";
 
 const EventAllMatch = () => {
   const navigation = useNavigate();
