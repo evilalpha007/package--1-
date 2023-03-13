@@ -8,8 +8,8 @@ import AccountSideBar from "../../components/Private/AccountSideBar";
 import PersistentDrawerLeft from "./../../components/Private/MobileSideBar";
 import Header from "./../../components/Private/Header/Header";
 import SideCart from "./../../components/Private/SideCart";
-import Footer from "./../../components/Private/user/Footer";
 import SideList from "./../../components/Private/SideList";
+import Footer from "../../components/Private/Footer";
 
 export default function PrivateLayouts({ children }) {
   const aside = useSelector((state) => state.asideState.aside);
@@ -70,8 +70,8 @@ export default function PrivateLayouts({ children }) {
           </div>
         </div>
       </div>
-      </div>
-      );
-    }
+      <Footer />;
+    </div>
+  );
+}
     
-    // <Footer />
