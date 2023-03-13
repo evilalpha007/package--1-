@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Navigate } from "react-router-dom";
-import { handelLogin } from "../store/features/authSlice";
+import { handelLogin } from "../../store/features/authSlice";
 const Login = () => {
   const dispatch = useDispatch();
 
