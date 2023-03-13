@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/admin.css";
+import "../../css/admin.css";
 import BalanceBar from "../../components/admin/BalanceBar";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import { useSelector } from "react-redux";
