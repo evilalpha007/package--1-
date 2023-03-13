@@ -7,7 +7,8 @@ import Tennis from "./../Private/Teniss";
 import BettingProfits from "./../Private/BettingProfits";
 import EventAllMatch from "./../Private/EventAllMatch";
 import MobEventMatch from "./childFolder/MobEventMatch";
-
+import CarouselImage from "./parentFolder/CarouselImage";
+import MyBets from "../a";
 
 const MobDetailPage = ({ activeAside }) => {
   const aside = useSelector((state) => state.asideState.aside);

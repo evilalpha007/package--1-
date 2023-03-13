@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import MobDetailPage from "../MobDetailPage";
+import Header from "../../Private/Header/Header";
 import AccountSideBar from "../../Private/AccountSideBar";
 import PersistentDrawerLeft from "../../Private/MobileSideBar";
 

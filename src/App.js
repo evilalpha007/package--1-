@@ -9,9 +9,6 @@ import PrivateRoutes from "./authentication/PrivateRoutes";
 
 function App() {
   const user = false;
-  //   const dispatch = useDispatch();
-  //   const data = useSelector(state => state.data);
-  // console.log(data);
   const [isMobile, setIsMobile] = useState(
     /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
   );
