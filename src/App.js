@@ -6,6 +6,12 @@ import AdminRoutes from "./authentication/AdminRoutes";
 import MobileView from "./components/mobile/header/MobileView";
 import { useState, useEffect } from "react";
 import PrivateRoutes from "./authentication/PrivateRoutes";
+import Ss from "./components/Private/Ss";
+import Master from "./components/Private/Master";
+import SuperMaster from "./components/Private/SuperMaster";
+import SubAdmin from "./components/Private/SubAdmin";
+import Agent from "./components/Private/Agent";
+import Error from "./components/Private/Error";
 
 function App() {
   const user = false;
