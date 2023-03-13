@@ -1,9 +1,9 @@
 import React from "react";
-import "../../css/admin.css";
-import BalanceBar from "./BalanceBar";
-import AdminSidebar from "./AdminSidebar";
+import "../css/admin.css";
+import BalanceBar from "../components/admin/BalanceBar";
+import AdminSidebar from "../components/admin/AdminSidebar";
 import { useSelector } from "react-redux";
-import AdminHeader from "./AdminHeader";
+import AdminHeader from "../components/admin/AdminHeader";
 
 const AdminLayouts = ({ children }) => {
   const { adminLogin } = useSelector((state) => state.auth);

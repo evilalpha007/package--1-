@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router";
 import AdminHomePage from "../components/admin/AdminHomePage";
 import Admin from "../components/admin/Admin";
 import ProtectedRoute from "./ProtectedRoute";
-import AdminLayouts from "../components/admin/AdminLayouts";
+import AdminLayouts from "./AdminLayouts";
 import "../css/admin.css";
 import AdminBetTicker from "../components/admin/AdminBetTicker";
 import AdminBlockMarket from "../components/admin/AdminBlockMarket";

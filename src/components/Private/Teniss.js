@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { onChangeAsideActive } from "../../store/features/asideSlice";
+import { onChangeDataActive } from "../../store/features/dataSlice";
 import { useGetTennisMatchesQuery } from "../../store/services/mainApi";
 import FootballTable from "./FootballTable";
 import TennisTable from "./TennisTable";
