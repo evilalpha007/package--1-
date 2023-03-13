@@ -1,5 +1,3 @@
-import { Login } from "@mui/icons-material";
-import { List } from "@mui/material";
 import React from "react";
 import { Route, Routes } from "react-router";
 import Agent from "../components/Private/Agent";
@@ -9,6 +7,9 @@ import Ss from "../components/Private/Ss";
 import SubAdmin from "../components/Private/SubAdmin";
 import SuperMaster from "../components/Private/SuperMaster";
 import ProtectedRoute from "./ProtectedRoute";
+import Login from "../components/Private/Login";
+import List from "../components/Private/List";
+
 import { useDispatch, useSelector } from "react-redux";
 
 export default function PrivateRoutes() {
