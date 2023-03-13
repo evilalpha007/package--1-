@@ -29,19 +29,20 @@ export default function Header() {
     },
   ];
   return (
-    <div className='header justify-between bg-transparent z-10 text-white'>
-      <div className='flex items-center gap-2'>
+    <div className="header justify-between bg-transparent z-10 text-white">
+      <div className="flex items-center gap-2">
         <SideBar />
-        <h1>DRSGAMES</h1>
+        <h1>LEGAL PLAY</h1>
         {/* <img src='image/mobile.3edfdb71.svg' alt='' className='h-[30px]' />*/}
-        <ul className='hidden gap-8 mx-8 2xl:flex'>
+        <ul className="hidden gap-8 mx-8 2xl:flex">
           {header.map((ele, i) => {
             return (
               <li key={i}>
                 <Link
                   to={ele.to}
                   href={ele.address}
-                  className='font-bold relative item'>
+                  className="font-bold relative item"
+                >
                   {ele.name}
                 </Link>
               </li>
@@ -50,11 +51,11 @@ export default function Header() {
         </ul>
         {/* <div className='text-xl'>DSR GAMES</div> */}
       </div>
-      <div className='flex gap-2 items-center'>
-        <div className='flex p-2 border border-yellow-300 rounded-full mobile_btn'>
-          <span className='material-symbols-rounded'>smartphone</span>
+      <div className="flex gap-2 items-center">
+        <div className="flex p-2 border border-yellow-300 rounded-full mobile_btn">
+          <span className="material-symbols-rounded">smartphone</span>
         </div>
-        <div onClick={() => setShowModal(true)} className='p-2 cursor-pointer'>
+        <div onClick={() => setShowModal(true)} className="p-2 cursor-pointer">
           Login
         </div>
         {showModal ? (
@@ -62,7 +63,7 @@ export default function Header() {
             <Login showModal={showModal} setShowModal={setShowModal} />
           </>
         ) : null}
-        <div className=' cursor-pointer bg-yellow-300 p-2 rounded-full px-4 text-black font-semibold'>
+        <div className=" cursor-pointer bg-yellow-300 p-2 rounded-full px-4 text-black font-semibold">
           Sign up
         </div>
       </div>

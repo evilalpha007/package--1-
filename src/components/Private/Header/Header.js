@@ -12,9 +12,9 @@ const Header = () => {
     <div>
       <div className=" header">
         <div className="header_block p-3">
-          <figure className="text-white d-flex">
+          <figure className="text-white   d-flex">
             <Link to="/">
-              <img src="./legalplay.png" className="image_logo" alt="logo" />
+              <img src="../legalplay.png" className="image_logo" alt="logo" />
             </Link>
             <div className="date_time d-flex">
               <span className="day fw">

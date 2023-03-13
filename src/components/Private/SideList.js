@@ -16,32 +16,40 @@ const SideList = () => {
     {
       path: "/game-list/cricket",
       name: "cricket",
-      icon: <img src="./image/cricket_ball.png" className="img_width" alt="" />,
+      icon: (
+        <img src="..//image/cricket_ball.png" className="img_width" alt="" />
+      ),
     },
     {
       path: "/game-list/casino",
       name: "Live Casino",
-      icon: <img src="./image/casino/caino.png" className="img_width" alt="" />,
+      icon: (
+        <img src="..//image/casino/caino.png" className="img_width" alt="" />
+      ),
     },
     {
       path: "/game-list/soccer",
       name: "Soccer",
-      icon: <img src="./image/horse_racing.jpg" className="img_width" alt="" />,
+      icon: (
+        <img src="..//image/horse_racing.jpg" className="img_width" alt="" />
+      ),
     },
     {
       path: "/game-list/grey-hound-racing",
       name: "Greyhound Racing ",
-      icon: <img src="./image/greyhound.jpg" className="img_width" alt="" />,
+      icon: <img src="..//image/greyhound.jpg" className="img_width" alt="" />,
     },
     {
       path: "/game-list/horse-racing",
       name: "HORSE RACING",
-      icon: <img src="./image/horse_racing.jpg" className="img_width" alt="" />,
+      icon: (
+        <img src="..//image/horse_racing.jpg" className="img_width" alt="" />
+      ),
     },
     {
       path: "/game-list/tennis",
       name: "Tennis  ",
-      icon: <img src="./image/Tennis_bal.png" className="img_width" alt="" />,
+      icon: <img src="..//image/teniss_bal.png" className="img_width" alt="" />,
     },
   ];
 
