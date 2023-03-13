@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router";
 import AdminHomePage from "../components/admin/AdminHomePage";
 import Admin from "../components/admin/Admin";
 import ProtectedRoute from "./ProtectedRoute";
-import Ss from "../components/Ss";
 import AdminLayouts from "../components/admin/AdminLayouts";
 import "../css/admin.css";
 import AdminBetTicker from "../components/admin/AdminBetTicker";
@@ -13,7 +12,6 @@ import AdminMemberListing from "../components/admin/AdminMemberListing";
 import AdminNetExposure from "../components/admin/AdminNetExposure";
 import AdminPositionTakingListing from "../components/admin/AdminPositionTakingListing";
 import AdminTransfer from "../components/admin/AdminTransfer";
-import AgencyManagement from "../components/admin/AgencyManagement";
 import Balance from "./../components/admin/account/Balance";
 
 export default function AdminRoutes() {

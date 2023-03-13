@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { onChangeAsideActive } from "../store/features/asideSlice";
-import { useGetCricketMatchesQuery } from "../store/services/mainApi";
-import { onChangeDataActive } from "../store/features/dataSlice";
+import { onChangeAsideActive } from "../../store/features/asideSlice";
+import { useGetCricketMatchesQuery } from "../../store/services/mainApi";
+import { onChangeDataActive } from "../../store/features/dataSlice";
 
 const DataPage = () => {
   const navigate = useNavigate();
