@@ -1,10 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { handleOddPointToggle } from "../store/features/stateManagementSlice";
 const MobEventMatch = () => {
   const dispatch = useDispatch();
   const allData = useSelector((state) => state.dataState.mobData);
-console.log(allData.data);
+  console.log(allData.data);
   return (
     <div className="MobEventMatch">
       <div className="main-details-header">
