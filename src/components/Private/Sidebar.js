@@ -1,7 +1,8 @@
 import React from "react";
 import List from "@mui/material/List";
 import { useDispatch, useSelector } from "react-redux";
-import { onChangeAsideActive } from "../store/features/asideSlice";
+import { onChangeAsideActive } from "../../store/features/asideSlice";
+// import { onChangeAsideActive } from "../store/features/asideSlice";
 
 const Sidebar = ({ sidebar, closeSidebar }) => {
   const aside = useSelector((state) => state.asideState.aside);

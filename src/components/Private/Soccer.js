@@ -1,10 +1,12 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { onChangeAsideActive } from "../store/features/asideSlice";
-import { useGetSoccerMatchesQuery } from "../store/services/mainApi";
+import { onChangeAsideActive } from "../../store/features/asideSlice";
+import { useGetSoccerMatchesQuery } from "../../store/services/mainApi";
+// import { onChangeAsideActive } from "../store/features/asideSlice";
+// import { useGetSoccerMatchesQuery } from "../store/services/mainApi";
 import FootballTable from "./FootballTable";
-import { onChangeDataActive } from "../store/features/dataSlice";
+// import { onChangeDataActive } from "../store/features/dataSlice";
 
 const Soccer = () => {
   const aside = useSelector((state) => state.asideState.aside);

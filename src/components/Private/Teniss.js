@@ -1,10 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { onChangeAsideActive } from "../store/features/asideSlice";
-import { useGetTennisMatchesQuery } from "../store/services/mainApi";
+import { onChangeAsideActive } from "../../store/features/asideSlice";
+import { useGetTennisMatchesQuery } from "../../store/services/mainApi";
 import FootballTable from "./FootballTable";
-// import { onChangeDataActive } from "../store/features/dataSlice";
 import TennisTable from "./TennisTable";
 
 const Tennis = () => {
