@@ -10,7 +10,7 @@ import PersistentDrawerRight from "./AccountSideBar";
 import AccountSideBar from "./AccountSideBar";
 
 import { useDispatch, useSelector } from "react-redux";
-import { onChangeAsideActive } from "../../../store/features/asideSlice";
+import { onChangeAsideActive } from "../../store/features/asideSlice";
 const List = () => {
   const aside = useSelector((state) => state.asideState.aside);
   const dispatch = useDispatch();
