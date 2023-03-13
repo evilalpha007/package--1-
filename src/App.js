@@ -3,7 +3,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { Routes, Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import AdminRoutes from "./authentication/AdminRoutes";
-import MobdileView from "./components/mobile/header/MobdileView";
+import MobileView from "./components/mobile/header/MobileView";
 import { useState, useEffect } from "react";
 import PrivateRoutes from "./authentication/PrivateRoutes";
 
@@ -37,7 +37,7 @@ function App() {
       <AdminRoutes />
       {isMobile || user ? (
         <Routes>
-          <Route exact path="/" element={<MobdileView />} />
+          <Route exact path="/" element={<MobileView />} />
         </Routes>
       ) : (
         <PrivateRoutes />

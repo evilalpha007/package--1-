@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
 import MobDetailPage from "../MobDetailPage";
-import AccountSideBar from "./../../Private/AccountSideBar";
-import PersistentDrawerLeft from "./../../Private/MobileSideBar";
+import AccountSideBar from "../../Private/AccountSideBar";
+import PersistentDrawerLeft from "../../Private/MobileSideBar";
 
-
-const MobdileView = () => {
+const MobileView = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const toggleSidebar = () => {
@@ -25,4 +24,4 @@ const MobdileView = () => {
   );
 };
 
-export default MobdileView;
+export default MobileView;
