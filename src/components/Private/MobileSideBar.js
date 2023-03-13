@@ -14,7 +14,8 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 import { useDispatch, useSelector } from "react-redux";
-import { onChangeAsideActive } from "../store/features/asideSlice";
+import { onChangeAsideActive } from '../../store/features/asideSlice';
+// import { onChangeAsideActive } from "../store/features/asideSlice";
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
