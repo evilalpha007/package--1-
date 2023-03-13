@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import Header from "../../Header/Header";
-import PersistentDrawerLeft from "../../MobileSideBar";
 import MobDetailPage from "../MobDetailPage";
-import AccountSideBar from "../../Private/desktop/AccountSideBar";
+import AccountSideBar from "./../../Private/AccountSideBar";
+import PersistentDrawerLeft from "./../../Private/MobileSideBar";
+
 
 const MobdileView = () => {
   const [sidebar, setSidebar] = useState(false);

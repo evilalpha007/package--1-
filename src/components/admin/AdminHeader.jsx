@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../css/admin.css";
 import { useDispatch } from "react-redux";
-import HeaderDate from './../utilities/HeaderDate';
-import HeaderTime from './../utilities/HeaderTime';
+
 import { onChangeAsideActive } from "../../store/features/asideSlice";
+import HeaderTime from "./../Private/utilities/HeaderTime";
+import HeaderDate from "./../Private/utilities/HeaderDate";
 
 const AdminHeader = () => {
   // const aside = useSelector((state) => state.asideState.aside);

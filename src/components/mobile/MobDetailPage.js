@@ -1,15 +1,13 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import BettingProfits from "../BettingProfits";
-import CricketTable from "../CricketTable";
-import DataPage from "../DataPage";
-import EventAllMatch from "../EventAllMatch";
-import LiveCasino from "../LiveCasino";
-import MyBets from "../MyBets";
-import Soccer from "../Soccer";
+
+import Soccer from "./../Private/Soccer";
+import LiveCasino from "./../Private/LiveCasino";
+import Tennis from "./../Private/Teniss";
+import BettingProfits from "./../Private/BettingProfits";
+import EventAllMatch from "./../Private/EventAllMatch";
 import MobEventMatch from "./childFolder/MobEventMatch";
-import CarouselImage from './parentFolder/CarouselImage';
-import Tennis from "./../Teniss";
+
 
 const MobDetailPage = ({ activeAside }) => {
   const aside = useSelector((state) => state.asideState.aside);
