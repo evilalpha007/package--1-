@@ -21,6 +21,15 @@ export default function PrivateLayouts({ children }) {
     setSidebar((prev) => !prev);
   };
 
+  const routes = [
+    { name: "LIVE CASINO", path: "/game-list/favorites" },
+    { name: "CRICKET", path: "/game-list/cricket" },
+    { name: "SOCCER", path: "/game-list/soccer" },
+    { name: "TENNIS", path: "/game-list/tennis" },
+    { name: "HORSE RACING", path: "/game-list/horse-racing" },
+    { name: "GREYHOUND RACING", path: "/game-list/grey-hound-racing" },
+  ];
+
   return (
     <div>
       <PersistentDrawerLeft />
@@ -32,34 +41,11 @@ export default function PrivateLayouts({ children }) {
       <Header />
       <div className="container">
         <div className="navItems  d-flex">
-          <li
-            className="hide_dot"
-            onClick={() => dispatch(onChangeAsideActive("LiveCasino"))}
-          >
-            LIVE CASINO
-          </li>
-          <li className="hide_dot">ELECTION</li>
-          <li className="hide_dot">TWENTY20BIGBASH🏆</li>
-          <Link
-            to={"/cricket"}
-            // onClick={() => dispatch(onChangeAsideActive("Cricket"))}
-          >
-            CRICKET
-          </Link>
-          <li onClick={() => dispatch(onChangeAsideActive("Soccer"))}>
-            SOCCER
-          </li>
-          <li onClick={() => dispatch(onChangeAsideActive("Tennis"))}>
-            TENNIS
-          </li>
-          <li>KABADI</li>
-          <li>ELECTION</li>
-          <li onClick={() => dispatch(onChangeAsideActive("Horse Racing"))}>
-            HORSE RACING
-          </li>
-          <li onClick={() => dispatch(onChangeAsideActive("Greyhound Racing"))}>
-            GREYHOUND RACING
-          </li>
+          {routes.map(({ name, path }) => (
+            <Link to={path} className="hide_dot">
+              {name}
+            </Link>
+          ))}
         </div>
       </div>
       <hr />

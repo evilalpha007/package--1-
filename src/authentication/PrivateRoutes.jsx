@@ -15,6 +15,7 @@ import Tennis from "../components/Private/Teniss";
 import BettingProfits from "../components/Private/BettingProfits";
 import MobEventMatch from "../components/mobile/childFolder/MobEventMatch";
 import LiveCasino from "../components/Private/LiveCasino";
+import Error from "../components/Private/Error";
 
 export default function PrivateRoutes() {
   const { login } = useSelector((state) => state.auth);

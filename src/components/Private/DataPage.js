@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { onChangeAsideActive } from "../../store/features/asideSlice";
 import { useGetCricketMatchesQuery } from "../../store/services/mainApi";
@@ -11,9 +11,9 @@ const DataPage = () => {
   const dispatch = useDispatch();
 
   const { data, error, isFetching } = useGetCricketMatchesQuery();
-  // console.log(data);
   if (error) return <>Error</>;
   if (isFetching) return <> Loading... </>;
+  // console.log(data);
 
   return (
     <div>
@@ -24,22 +24,20 @@ const DataPage = () => {
               return (
                 <tr key={i}>
                   <td className="d-flex fsm remove_border hover_effect justify-content-between ">
-                    <NavLink
-                      to=""
+                    <Link
+                      to={{
+                        pathname: `/game-list/event/${
+                          ele?.eid ? ele.eid : ele.etid
+                        }/${ele?.gameId ? ele.gameId : ele.gmid}`,
+                      }}
                       className="flex-1"
                       onClick={() => {
-                        dispatch(onChangeAsideActive("EventAllMatch"));
-                        dispatch(
-                          onChangeDataActive({
-                            name: "EventAllMatch",
-                            data: ele,
-                          })
-                        );
+                        dispatch(onChangeDataActive(ele));
                       }}
                     >
                       <strong className="mx-2 fsm">⭐</strong>
                       {ele?.eventName.split("/")[0]}
-                    </NavLink>
+                    </Link>
                     <div className="">
                       {ele.inPlay ? (
                         <small>{ele?.eventName.split("/")[1]}</small>

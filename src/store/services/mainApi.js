@@ -25,7 +25,7 @@ export const mainApi = createApi({
     }),
     GetGameIdMarket: builder.query({
       query: (id) => ({
-        url: `/market/${id}`,
+        url: `/${id}`,
       }),
     }),
   }),

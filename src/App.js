@@ -50,7 +50,6 @@ function App() {
         <Route exact path="/supermaster" element={<SuperMaster />} />
         <Route exact path="/subadmin" element={<SubAdmin />} />
         <Route exact path="/agent" element={<Agent />} />
-        {/* <Route exact path="*" element={<Error />} /> */}
       </Routes>
     </>
   );
