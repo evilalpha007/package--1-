@@ -1,7 +1,6 @@
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
 import { Routes, Route } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 import AdminRoutes from "./authentication/AdminRoutes";
 import MobileView from "./components/mobile/header/MobileView";
 import { useState, useEffect } from "react";

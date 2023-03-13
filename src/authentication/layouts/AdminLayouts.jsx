@@ -5,7 +5,7 @@ import AdminSidebar from "../../components/admin/AdminSidebar";
 import { useSelector } from "react-redux";
 import AdminHeader from "../../components/admin/AdminHeader";
 
-const AdminLayouts = ({ children }) => {
+const PrivateLayouts = ({ children }) => {
   const { adminLogin } = useSelector((state) => state.auth);
 
   return (
@@ -28,4 +28,4 @@ const AdminLayouts = ({ children }) => {
   );
 };
 
-export default AdminLayouts;
+export default PrivateLayouts;

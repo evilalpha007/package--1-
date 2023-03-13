@@ -4,15 +4,24 @@ import ProtectedRoute from "./ProtectedRoute";
 import Login from "../components/Private/Login";
 import List from "../components/Private/List";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import PrivateLayouts from "./layouts/PrivateLayouts";
 
 export default function PrivateRoutes() {
   const { login } = useSelector((state) => state.auth);
 
   return (
-    <Routes>
-      <Route exact path="/" element={login ? <List /> : <Login />} />
-      <Route element={<ProtectedRoute login={false} />}></Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route exact path="/" element={!login && <Login />} />
+      </Routes>
+      <PrivateLayouts>
+        <Routes>
+          <Route element={<ProtectedRoute login={false} />}>
+            <Route exact path="/" element={<List />} />
+          </Route>
+        </Routes>
+      </PrivateLayouts>
+    </>
   );
 }
